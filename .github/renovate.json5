@@ -8,6 +8,7 @@
     enabled: false
   },
   'pip-compile': {
+    enabled: true,
     managerFilePatterns: [
       '(^|/)video-transcripts/requirements\\.txt$'
     ],
