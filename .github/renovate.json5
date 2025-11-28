@@ -14,10 +14,6 @@
   },
   packageRules: [
     {
-      matchFileNames: ["requirements.in"],
-      "versioning": "pep440"
-    },
-    {
       groupName: 'all patch versions',
       matchUpdateTypes: [
         'patch',
