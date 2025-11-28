@@ -17,6 +17,10 @@
   },
   packageRules: [
     {
+      matchManagers: ['pip-compile'],
+      versioning: 'pep440'
+    },
+    {
       groupName: 'all patch versions',
       matchUpdateTypes: [
         'patch',
