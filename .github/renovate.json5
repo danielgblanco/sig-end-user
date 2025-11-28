@@ -14,7 +14,7 @@
   },
   packageRules: [
     {
-      matchFileNames: ["/video-transcripts/requirements.in"],
+      matchFileNames: ["requirements.in"],
       "versioning": "pep440"
     },
     {
