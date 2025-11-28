@@ -11,7 +11,7 @@
   'pip-compile': {
     enabled: true,
     managerFilePatterns: [
-      '(^|/)video-transcripts/requirements\\.txt$'
+      '/(^|/)video-transcripts/requirements\\.txt$/'
     ],
     versioning: 'pep440'
   },
