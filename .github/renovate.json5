@@ -1,33 +1,42 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:best-practices",
-    "helpers:pinGitHubActionDigestsToSemver"
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'config:best-practices',
+    'helpers:pinGitHubActionDigestsToSemver',
   ],
-  "pip_requirements": {
-    "enabled": false
+  pip_requirements: {
+    enabled: false
   },
-  "pip-compile": {
-    "managerFilePatterns": ["/(^|/)video-transcripts/requirements\\.txt$/"],
-    "versioning": "pep440"
+  pip_compile: {
+    managerFilePatterns: [
+      '/(^|/)video-transcripts/requirements\\.txt$/'
+    ],
   },
-  "lockFileMaintenance": {
-    "enabled": true,
-    "branchTopic": "pip-compile-refresh",
-    "commitMessageAction": "Refresh pip-compile outputs"
-  },
-  "packageRules": [
+  packageRules: [
     {
-      "groupName": "all patch versions",
-      "matchUpdateTypes": ["patch"],
-      "schedule": ["before 8am every weekday"]
+      matchFileNames: ["/video-transcripts/requirements.in"],
+      "versioning": "pep440"
     },
     {
-      "matchUpdateTypes": ["minor", "major"],
-      "schedule": ["before 8am on Monday"]
-    }
+      groupName: 'all patch versions',
+      matchUpdateTypes: [
+        'patch',
+      ],
+      schedule: [
+        'before 8am every weekday',
+      ],
+    },
+    {
+      matchUpdateTypes: [
+        'minor',
+        'major',
+      ],
+      schedule: [
+        'before 8am on Monday',
+      ],
+    },
   ],
-  "labels": [
-    "dependencies"
-  ]
+  labels: [
+    'dependencies',
+  ],
 }
