@@ -12,8 +12,7 @@
     enabled: true,
     managerFilePatterns: [
       '/(^|/)video-transcripts/requirements\\.txt$/'
-    ],
-    versioning: 'pep440'
+    ]
   },
   packageRules: [
     {
