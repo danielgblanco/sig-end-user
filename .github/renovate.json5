@@ -8,7 +8,8 @@
     "enabled": false
   },
   "pip-compile": {
-    "managerFilePatterns": ["/(^|/)video-transcripts/requirements\\.txt$/"]
+    "managerFilePatterns": ["/(^|/)video-transcripts/requirements\\.txt$/"],
+    "versioning": "pep440"
   },
   "lockFileMaintenance": {
     "enabled": true,
