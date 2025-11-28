@@ -18,7 +18,8 @@
   packageRules: [
     {
       matchManagers: ['pip-compile'],
-      versioning: 'pep440'
+      versioning: 'pep440',
+      schedule: ['at any time']
     },
     {
       groupName: 'all patch versions',
