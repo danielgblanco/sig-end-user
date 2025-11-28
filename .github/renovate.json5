@@ -7,7 +7,7 @@
   pip_requirements: {
     enabled: false
   },
-  pip_compile: {
+  pip-compile: {
     managerFilePatterns: [
       '/(^|/)video-transcripts/requirements\\.txt$/'
     ],
