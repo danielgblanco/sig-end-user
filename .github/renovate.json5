@@ -1,5 +1,6 @@
 {
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  enabledManagers: ['pip-compile', 'github-actions'],
   extends: [
     'config:best-practices',
     'helpers:pinGitHubActionDigestsToSemver',
