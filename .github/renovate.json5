@@ -35,8 +35,7 @@
     },
     {
       matchManagers: ['pip-compile'],
-      versioning: 'pep440',
-      schedule: ['at any time']
+      versioning: 'pep440'
     },
   ],
   labels: [
