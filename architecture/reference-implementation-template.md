@@ -5,8 +5,7 @@ linkTitle: '{Organization Name}'
 
 By [{Author Name}]({GitHub or web profile URL}) ({Organization Name}) | {Date}
 
-_Before filling in this template, read the
-[Reference Implementation authoring guidelines](./reference-implementation-guidelines.md)._
+_Before filling in this template, read the [Reference Implementation authoring guidelines](./reference-implementation-guidelines.md)._
 
 ## {Organization Name} Reference Implementation
 
